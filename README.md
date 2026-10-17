@@ -2,23 +2,22 @@
 
 Portal en català que reuneix les set utilitats de qmrcat i enllaça directament a les seves versions de GitHub Pages. HTML, CSS i JavaScript natius: cap dependència, font externa, servei d’analítica ni procés de compilació.
 
-El tema fosc és el predeterminat, independentment del tema del sistema. La paleta principal es pot personalitzar a les variables de `:root` de `dist/styles.css`; els controls natius del navegador també utilitzen l’esquema fosc.
+El tema fosc és el predeterminat, independentment del tema del sistema. La paleta principal es pot personalitzar a les variables de `:root` de `styles.css`; els controls natius del navegador també utilitzen l’esquema fosc.
 
 ## Obrir el portal
 
-Obre `dist/index.html` amb qualsevol navegador modern. També funciona amb `file://`: el catàleg es carrega amb scripts clàssics, sense `fetch` ni mòduls ES.
+Obre `index.html` amb qualsevol navegador modern. També funciona amb `file://`: el catàleg es carrega amb scripts clàssics, sense `fetch` ni mòduls ES.
 
 Per servir-lo localment, executa des de la carpeta `web`:
 
 ```sh
 python -m http.server 8000 --directory dist
 ```
-
-Obre `http://localhost:8000`. Per publicar-lo en qualsevol allotjament estàtic o GitHub Pages, puja **el contingut de `dist/`** al directori públic. Els camins són relatius i també admeten un subdirectori.
+Has de tenir instal·lat el Python al teu ordinador.
 
 ## Afegir una utilitat
 
-Edita `dist/utilities.js` i afegeix un objecte a `window.UTILITIES`:
+Edita `utilities.js` i afegeix un objecte a `window.UTILITIES`:
 
 ```js
 {
@@ -43,11 +42,11 @@ La cerca ignora accents i majúscules i consulta el nom, la descripció, la cate
 
 ## Fitxers
 
-- `dist/index.html`: estructura, textos del portal i enllaços alternatius sense JavaScript.
-- `dist/styles.css`: disseny adaptable i estils d’accessibilitat.
-- `dist/utilities.js`: únic fitxer que cal editar per ampliar el catàleg amb JavaScript.
-- `dist/app.js`: cerca, filtres, ordenació i generació de targetes.
-- `dist/favicon.svg`: icona local del portal.
+- `index.html`: estructura, textos del portal i enllaços alternatius sense JavaScript.
+- `styles.css`: disseny adaptable i estils d’accessibilitat.
+- `utilities.js`: únic fitxer que cal editar per ampliar el catàleg amb JavaScript.
+- `app.js`: cerca, filtres, ordenació i generació de targetes.
+- `favicon.svg`: icona local del portal.
 
 Si vols mantenir també el catàleg alternatiu sense JavaScript, actualitza els enllaços del bloc `<noscript>` d’`index.html` en afegir eines.
 
