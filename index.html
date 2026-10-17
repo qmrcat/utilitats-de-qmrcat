@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Les utilitats de qmrcat, en un sol lloc. Eines en català per treballar amb imatges, escriure, calcular, xifrar fitxers i portar les teves partides.">
+  <meta name="theme-color" content="#161915">
+  <meta name="color-scheme" content="dark">
+  <title>Utilitats de qmrcat · Eines per al dia a dia</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="utilities.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#utilitats">Salta a les utilitats</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="Utilitats de qmrcat, inici"><span class="brand-mark" aria-hidden="true">q<span>↗</span></span><span>utilitats<span class="brand-by">de qmrcat</span></span></a>
+    <nav aria-label="Navegació principal"><a class="nav-current" href="#utilitats">Les eines</a><a href="#sobre">Sobre el projecte</a><a class="github-nav" href="https://github.com/qmrcat" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (s’obre en una pestanya nova)</span></a></nav>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span aria-hidden="true"></span> PETITES EINES, GRANS SOLUCIONS</p><h1 id="hero-title">Una eina per a<br>cada <span>«com ho faig?»</span></h1><p class="hero-description">Retalla una imatge, calcula el consum o posa ordre a les partides. Les meves utilitats, juntes i a mà quan les necessitis.</p><a class="hero-link" href="#utilitats">Troba la teva eina <span aria-hidden="true">↓</span></a></div>
+      <div class="toolbox" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="tiny-plus plus-one">+</span><span class="tiny-plus plus-two">+</span><div class="floating-tool tile-image"><svg viewBox="0 0 48 48"><rect x="7" y="7" width="34" height="34" rx="5"/><path d="M7 29 19 19l22 18M27 25l6-6 8 8"/><circle cx="31" cy="16" r="3"/></svg></div><div class="floating-tool tile-code"><span>Md<span class="md-arrow">↓</span></span></div><div class="floating-tool tile-bolt"><svg viewBox="0 0 48 48"><path d="m27 5-16 22h12l-2 16 16-23H25z"/></svg></div><div class="floating-tool tile-lock"><svg viewBox="0 0 48 48"><rect x="10" y="21" width="28" height="22" rx="5"/><path d="M16 21v-8a8 8 0 0 1 16 0v8M24 29v6"/></svg></div><span class="toolbox-caption">EL TEU PETIT CALAIX D’EINES</span></div>
+    </section>
+    <div class="principles"><div class="wrap"><span><span aria-hidden="true">↗</span> Accés directe a les eines</span><span><span aria-hidden="true">{ }</span> Codi obert</span><span><span aria-hidden="true">◎</span> En català</span><span><span aria-hidden="true">✳</span> Per al teu dia a dia</span></div></div>
+    <section class="catalog wrap" id="utilitats" aria-labelledby="catalog-title">
+      <div class="section-heading"><div><p class="eyebrow">EXPLORA EL RECULL</p><h2 id="catalog-title">Què necessites fer avui?<span class="total-count" id="total-count"></span></h2></div><p>Tria una eina i comença.</p></div>
+      <div class="catalog-controls" id="catalog-controls" hidden>
+        <div class="search-sort"><div class="search-field"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><label class="sr-only" for="search">Cerca una utilitat</label><input id="search" type="search" placeholder="Cerca una eina, una tasca, una idea…" autocomplete="off"><kbd aria-hidden="true">/</kbd></div><div class="sort-field"><label for="sort">Ordena:</label><select id="sort"><option value="default">Ordre del recull</option><option value="name">Nom (A–Z)</option></select></div></div>
+        <div class="filters" id="filters" role="group" aria-label="Filtra per categoria"></div>
+      </div>
+      <p class="results-count" id="results-count" role="status" aria-live="polite" aria-atomic="true"></p>
+      <div class="tool-grid" id="tool-grid"></div>
+      <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">⌕</span><h3>No hem trobat cap eina</h3><p>Prova una altra paraula o explora totes les categories.</p><button id="reset-filters" type="button">Mostra totes les eines <span aria-hidden="true">↗</span></button></div>
+      <noscript><div class="noscript"><p>Accedeix directament a les utilitats:</p><ul><li><a href="https://qmrcat.github.io/divisor-imatges/">Divisor d’imatges — divideix imatges en quadrícules.</a></li><li><a href="https://qmrcat.github.io/calculadora-consum-electric/">Consum elèctric — estima el consum i el cost dels aparells.</a></li><li><a href="https://qmrcat.github.io/on-es-la-deixalleria/">Deixalleria mòbil de Reus — consulta dates i ubicacions.</a></li><li><a href="https://qmrcat.github.io/Zona-MarcaAigues/">Marca d’aigua — afegeix text i tapa zones sensibles.</a></li><li><a href="https://qmrcat.github.io/Zona-Partides/">Marcador de partides — anota rondes i puntuacions.</a></li><li><a href="https://qmrcat.github.io/Xifreu_en_local/">CiberGanxets — xifra i desxifra fitxers al navegador.</a></li><li><a href="https://qmrcat.github.io/editor-markdown/">Editor Markdown — escriu amb vista prèvia.</a></li></ul></div></noscript>
+    </section>
+    <section class="about wrap" id="sobre" aria-labelledby="about-title"><div class="about-symbol" aria-hidden="true">✳</div><div><p class="eyebrow">UN RECULL QUE VA CREIXENT</p><h2 id="about-title">Fetes per resoldre. Compartides per ajudar.</h2><p>Aquest és el meu calaix d’eines digitals: petits projectes per a necessitats quotidianes, oberts a tothom. Torna-hi quan vulguis; hi aniré afegint noves utilitats.</p></div><a href="https://github.com/qmrcat" target="_blank" rel="noopener noreferrer">Explora els projectes <span aria-hidden="true">↗</span><span class="sr-only"> a GitHub (pestanya nova)</span></a></section>
+  </main>
+  <footer class="site-footer wrap"><a class="footer-brand" href="./">utilitats <span>de qmrcat</span></a><p>Petites solucions, a un clic.</p><a href="#">Torna amunt <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
