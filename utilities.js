@@ -5,6 +5,16 @@
    Fes servir un id únic i URL https:// per a l'eina i el repositori. */
 window.UTILITIES = [
   {
+    id: 'Consulta-DISC',
+    name: 'Consulta DISC',
+    description: 'Cercador per saber si una paraula és vàlida segons el Diccionari Informatitzat de l\'Scrabble en Català (DISC). Accepta entrades i formes flexionades (plurals, femenins i conjugacions verbals), sense tenir en compte accents ni majúscules. Mostra la categoria gramatical, de quina entrada prové cada forma i un enllaç al diccionari de l\'IEC (DIEC2). També ofereix una API en JSON per fer consultes des d\'altres webs.',
+    category: 'Llenguatge', icon: 'tool', color: 'green',
+    tags: ['Diccionari', 'Scrabble', 'El xerrameca'],
+    keywords: ['paraula', 'validació', 'DISC', 'Scrabble', 'català'],
+    url: 'https://qmrcat.github.io/diccionari/',
+    repository: 'https://github.com/qmrcat/diccionari/'
+  },
+  {
     id: 'divisor-imatges',
     name: 'Divisor d’imatges',
     description: 'Divideix una imatge en quadrícules de 2 × 2 a 6 × 6. Descarrega els trossos per separat o tots junts en un ZIP.',
