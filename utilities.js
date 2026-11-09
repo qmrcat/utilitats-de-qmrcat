@@ -5,6 +5,16 @@
    Fes servir un id únic i URL https:// per a l'eina i el repositori. */
 window.UTILITIES = [
   {
+    id: 'pocketmod',
+    name: 'PocketMod',
+    description: 'Converteix un PDF en un llibret PocketMod imprimible de vuit pàgines. Organitza les pàgines en un full per imprimir, plegar i retallar.',
+    category: 'Escriptura', icon: 'grid', color: 'blue',
+    tags: ['PDF', 'Impressió', 'Llibret'],
+    keywords: ['pocketmod', 'llibret', 'plegar', 'imprimir', 'pdf', 'butxaca'],
+    url: 'https://qmrcat.github.io/pocketmod/',
+    repository: 'https://github.com/qmrcat/pocketmod'
+  },
+  {
     id: 'Consulta-DISC',
     name: 'Consulta DISC',
     description: 'Cercador per saber si una paraula és vàlida segons el Diccionari Informatitzat de l\'Scrabble en Català (DISC). Accepta entrades i formes flexionades (plurals, femenins i conjugacions verbals), sense tenir en compte accents ni majúscules. Mostra la categoria gramatical, de quina entrada prové cada forma i un enllaç al diccionari de l\'IEC (DIEC2). També ofereix una API en JSON per fer consultes des d\'altres webs.',
