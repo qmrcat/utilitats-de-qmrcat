@@ -5,6 +5,26 @@
    Fes servir un id únic i URL https:// per a l'eina i el repositori. */
 window.UTILITIES = [
   {
+    id: 'pissarra',
+    name: 'Pissarra',
+    description: 'Pissarra digital per escriure i dibuixar.',
+    category: 'Escriptura', icon: 'grid', color: 'blue',
+    tags: ['Pissarra digital', 'Dibuix'],
+    keywords: ['pissarra', 'dibuixar', 'escriure', 'notes'],
+    url: 'https://qmrcat.github.io/Pissarra/',
+    repository: 'https://github.com/qmrcat/Pissarra'
+  },
+  {
+    id: 'plec-estudi-de-maquetacio',
+    name: 'Plec · Estudi de maquetació',
+    description: 'Editor de publicacions en català, inspirat en el flux de treball dels programes d’autoedició com PagePlus X9.',
+    category: 'Escriptura', icon: 'grid', color: 'blue',
+    tags: ['PDF', 'Impressió', 'Estudi'],
+    keywords: ['plec', 'estudi', 'apunts', 'imprimir', 'pdf', 'imatges'],
+    url: 'https://qmrcat.github.io/plec-estudi/',
+    repository: 'https://github.com/qmrcat/plec-estudi'
+  },
+  {
     id: 'pocketmod',
     name: 'PocketMod',
     description: 'Converteix un PDF en un llibret PocketMod imprimible de vuit pàgines. Organitza les pàgines en un full per imprimir, plegar i retallar.',
